@@ -29,7 +29,7 @@ alias -g XC='&> xclip -i -sel c'
 # last modified(inode time) file or directory
 alias -g NF="./*(oc[1])"
 
-if [[ $(uname) == "Darwin" ]]; then
+if [[ "$OSTYPE" == darwin* ]]; then
   # display notification
   alias ndone="osascript -e 'display notification \"Done\" with title \"Terminal\"'"
   # say 
